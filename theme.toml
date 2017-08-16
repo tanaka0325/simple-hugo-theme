@@ -1,0 +1,12 @@
+name = "Simple Hugo Theme"
+license = "MIT"
+licenselink = "https://github.com/tanaka0325/simple-hugo-theme/blob/master/LICENSE.md"
+description = "simple hugo theme"
+homepage = "https://github.com/tanaka0325/simple-hugo-theme/"
+tags = ["blog", "minimal", "responsive"]
+features = ["blog", "themes", "minimal", "responsive"]
+min_version = "0.26"
+
+[author]
+  name = "Hiroyuki Tanaka"
+  homepage = "https://tanaka0325.github.io"
