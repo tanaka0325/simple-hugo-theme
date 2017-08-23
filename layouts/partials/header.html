@@ -2,7 +2,7 @@
   <div class="container">
     <div class="nav-wrapper">
       <a href="{{ .Site.BaseURL }}" class="logo">{{ .Site.Title }}</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <ul id="nav-mobile" class="right hide-on-small-only">
         <li><a href="/tags/"><i class="fa fa-tags fa-2x" aria-hidden="true"></i></a></li>
         {{ with .Site.Params.github }}<li><a href="{{ . }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>{{ end }}
         {{ with .Site.Params.facebook }}<li><a href="{{ . }}"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>{{ end }}
