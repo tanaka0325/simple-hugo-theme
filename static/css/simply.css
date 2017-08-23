@@ -164,6 +164,25 @@ code {
   content: ">>";
 }
 
+.tags-table-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.tags-table {
+  width: 70%;
+}
+
+.tags-table span.badge {
+  background-color: #0277bd;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.tags-table a {
+  color: #039be5 !important;
+}
+
 .page-footer {
   padding: 20px;
   color: #616161;

@@ -1,3 +1,6 @@
+// variables
+$baseColor: #0277bd
+
 body
   display: flex
   min-height: 100vh
@@ -67,7 +70,7 @@ main
 blockquote
   padding: 5px 15px
   background-color: #f7f7f7
-  border-left: 5px solid #0277bd
+  border-left: 5px solid $baseColor
   font-style: italic
   color: #666
 
@@ -75,12 +78,6 @@ blockquote
 code
   border: 1px solid #E1E1E1
   border-radius: 4px
-// pre
-//   background-color: #e0e0e0
-//   code
-//     background-color: #e0e0e0
-// .hljs
-//   background-color: #e0e0e0
 
 // pagination
 .pagination
@@ -114,6 +111,19 @@ code
           font-size: 1.2rem
           content: ">>"
 
+// tags page
+.tags-table-wrapper
+  display: flex
+  justify-content: center
+.tags-table
+  width: 70%
+  span.badge
+    background-color: $baseColor
+    border-radius: 10px
+    color: #fff
+  a
+    &.collection-item
+    color: #039be5 !important
 
 // footer
 .page-footer

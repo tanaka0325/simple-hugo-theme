@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1 class="page-title">tags</h1>
+
+  <div class="tags-table-wrapper">
+    <div class="collection tags-table">
+      {{ $plural := .Data.Plural }}
+      {{ range $k, $v := .Data.Terms }}
+      <a href="/{{ $plural }}/{{ $k | urlize }}" class="collection-item">
+        {{ $k }}<span class="badge">{{ len $v }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+
+
+{{ end }}
