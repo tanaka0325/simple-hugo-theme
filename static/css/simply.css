@@ -8,7 +8,7 @@ main {
   flex: 1 0 auto;
 }
 
-header .logo {
+.logo {
   font-size: 2rem;
 }
 
@@ -16,16 +16,45 @@ header .logo {
   display: inherit !important;
 }
 
-footer.page-footer {
+.article-list {
+  margin: 20px 0;
+}
+
+.article-list p {
+  margin: 0;
+}
+
+.article-list .article-title {
+  font-size: 1.3rem;
+}
+
+.article-list .article-meta {
+  display: inline-flex;
+  align-items: center;
+}
+
+.article-list .article-date {
+  color: #9e9e9e;
+  margin-right: 10px;
+}
+
+.article-list .article-tag {
+  font-size: 0.8rem;
+  margin-bottom: 0;
+  height: 20px;
+  line-height: 20px;
+}
+
+.page-footer {
   padding: 20px;
   color: #616161;
 }
 
-footer .icon-list {
+.icon-list {
   display: inline-flex;
 }
 
-footer .icon-list a {
+.icon-list a {
   padding: 0 15px;
   color: black;
 }
