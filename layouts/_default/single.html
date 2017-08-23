@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1 class="page-title">{{ .Title }}</h1>
+  <div class="article-meta">
+      <p class="article-date">{{ .Date.Format "2006-01-02" }}</p>
+      {{ if .Params.tags}}
+        {{ range .Params.tags }}
+          <a href="{{ $.Site.LanguagePrefix | absURL }}tags/{{ . | urlize }}/">
+            <div class="chip article-tag">#{{ . }}</div>
+          </a>
+        {{ end }}
+      {{ end }}
+    </div>
+  <section class="page-content">
+    {{ .Content }}
+  </section>
+  {{ end }}
