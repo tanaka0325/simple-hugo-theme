@@ -30,6 +30,39 @@ main
     height: 20px
     line-height: 20px
 
+// pagination
+.pagination
+  display: flex
+  justify-content: center
+  li
+    &.active
+      background-color: #01579b
+    &:first-child
+      span
+        font-size: 0
+        &:after
+          font-size: 1.2rem
+          content: "<<"
+    &:nth-child(2)
+      span
+        font-size: 0
+        &:after
+          font-size: 1.2rem
+          content: "<"
+    &:nth-last-child(2)
+      span
+        font-size: 0
+        &:after
+          font-size: 1.2rem
+          content: ">"
+    &:last-child
+      span
+        font-size: 0
+        &:after
+          font-size: 1.2rem
+          content: ">>"
+
+
 // footer
 .page-footer
   padding: 20px

@@ -45,6 +45,51 @@ main {
   line-height: 20px;
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li.active {
+  background-color: #01579b;
+}
+
+.pagination li:first-child span {
+  font-size: 0;
+}
+
+.pagination li:first-child span:after {
+  font-size: 1.2rem;
+  content: "<<";
+}
+
+.pagination li:nth-child(2) span {
+  font-size: 0;
+}
+
+.pagination li:nth-child(2) span:after {
+  font-size: 1.2rem;
+  content: "<";
+}
+
+.pagination li:nth-last-child(2) span {
+  font-size: 0;
+}
+
+.pagination li:nth-last-child(2) span:after {
+  font-size: 1.2rem;
+  content: ">";
+}
+
+.pagination li:last-child span {
+  font-size: 0;
+}
+
+.pagination li:last-child span:after {
+  font-size: 1.2rem;
+  content: ">>";
+}
+
 .page-footer {
   padding: 20px;
   color: #616161;
