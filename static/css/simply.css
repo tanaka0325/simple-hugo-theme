@@ -1,7 +1,31 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
 header .logo {
   font-size: 2rem;
 }
 
 .fa {
   display: inherit !important;
+}
+
+footer.page-footer {
+  padding: 20px;
+  color: #616161;
+}
+
+footer .icon-list {
+  display: inline-flex;
+}
+
+footer .icon-list a {
+  padding: 0 15px;
+  color: black;
 }

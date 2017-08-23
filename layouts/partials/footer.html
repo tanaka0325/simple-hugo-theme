@@ -1,0 +1,13 @@
+<div class="container center-align">
+  <div>
+    <ul class="icon-list">
+      <li><a href="/tags/"><i class="fa fa-tags fa-2x" aria-hidden="true"></i></a></li>
+      {{ with .Site.Params.github }}<li><a href="{{ . }}"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>{{ end }}
+      {{ with .Site.Params.facebook }}<li><a href="{{ . }}"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>{{ end }}
+      {{ with .Site.Params.twitter }}<li><a href="{{ . }}"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>{{ end }}
+    </ul>
+  </div>
+  <div classs="copyright">
+    &copy; 2017 {{ .Site.Params.Author }}
+  </div>
+</div>

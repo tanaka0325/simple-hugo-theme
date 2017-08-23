@@ -15,7 +15,7 @@
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
     {{ template "_internal/google_analytics_async.html" . }}
   </head>
-  <body class="grey lighten-3">
+  <body class="grey lighten-5">
     <header>
       {{ partial "header" . }}
     </header>
@@ -23,7 +23,7 @@
       {{ block "main" . }}
       {{ end }}
     </main>
-    <footer>
+    <footer class="page-footer grey lighten-3">
       {{ partial "footer" . }}
     </footer>
   </body>
