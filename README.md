@@ -1,3 +1,3 @@
 # simply
 
-This is simple hugo theme.
+This is simple hugo blog theme.
