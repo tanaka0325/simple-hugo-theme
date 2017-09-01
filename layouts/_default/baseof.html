@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/simply.css">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/custom.css">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     <link rel="alternate" href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}favicon.ico">
     <title>{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}</title>
